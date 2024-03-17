@@ -1,25 +1,169 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+* {
+  box-sizing: border-box;
+}
+
+section {
+  margin-top: 36px;
+  margin-left: 156px;
+}
+
+a, ul {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-decoration: none;
+  list-style-type: none;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  background: #fff;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #808080;
+  margin-right: 8px;
+  padding-left: 16px;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+input:hover,
+input:focus {
+  border-color: black;
+}
+
+input:active {
+  border-color: #4e75ff;
+}
+
+input:disabled {
+  background: #fafafa;
+  color: #808080;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #989898;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background: #cfcfcf;
+  border: none;
+  cursor: pointer;
+}
+
+button:active {
+  background: #4e75ff;
+  color: #fff;
+}
+
+button:hover,
+button:focus {
+  color: #fff;
+  background: #6c8cff;
+}
+
+.timer {
+  display: flex;
+  width: 346px;
+  height: 72px;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: center;
+}
+
+.form {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-delay {
+  width: 360px;
+  height: 40px;
+  padding: 0 auto;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.input-delay:hover {
+  border-color: #000;
+}
+
+.btn-create {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+}
+
+fieldset {
+  display: flex;
+  gap: 48px;
+  border-radius: 4px;
+  border-width: 1.5px;
+  stroke: #808080;
+  width: 360px;
+  height: 78px;
+  padding: 14px 48px 8px;
+}
+
+label {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+legend {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.input-radio {
+  border-radius: 14px;
+  width: 20px;
+  height: 20px;
 }
