@@ -67,15 +67,15 @@ button {
   cursor: pointer;
 }
 
-button:active {
-  background: #4e75ff;
-  color: #fff;
-}
-
 button:hover,
 button:focus {
   color: #fff;
   background: #6c8cff;
+}
+
+.btn-is-active {
+  background: #4e75ff;
+  color: #fff;
 }
 
 .timer {

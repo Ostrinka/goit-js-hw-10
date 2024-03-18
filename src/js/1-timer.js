@@ -22,6 +22,7 @@ const options = {
         message: `Please choose a date in the future`,
       });
     } else {
+      startBtn.classList.add(`btn-is-active`);
       startBtn.disabled = false;
       inputTime.disabled = true;
     }
@@ -53,6 +54,7 @@ startBtn.disabled = true;
 
 startBtn.addEventListener('click', event => {
   const repeatTime = setInterval(() => {
+    startBtn.classList.remove(`btn-is-active`);
     timeInterval = userSelectedDate - new Date();
     event.preventDefault();
     inputTime.disabled = true;
